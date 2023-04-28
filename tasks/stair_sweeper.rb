@@ -11,27 +11,9 @@ class StairSweeper < UrRobot
     super(street, avenue, direction, beepers)
   end
   
-  # climb one stair
-  def climb_stair
-    turn_left
+  def mover_beeper
     move
-    turn_right
-    move
-  end
-  # sweep beepers from three stairs: one beeper per step
-  def sweep_stairs
-    climb_stair
-    pick_beeper
-    climb_stair
-    pick_beeper
-    climb_stair
-    pick_beeper
-    turn_off
-  end
-  
-  # The standard task for this class of robots
- def run_task
-    sweep_stairs
+    put_beeper
   end
 
 end
