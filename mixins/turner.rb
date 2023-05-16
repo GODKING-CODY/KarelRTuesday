@@ -28,4 +28,96 @@ module Turner
     move
     turn_around
   end
+  def pick_upmove
+    pick_beeper
+    move
+  end
+  def beep_move
+    put_beeper
+    move
+  end
+  def pick_30
+    pick_beeper
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper 
+    pick_beeper
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper 
+    pick_beeper
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper 
+    pick_beeper
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper   
+    pick_beeper 
+    
+  end
+   def put_30
+    put_beeper
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper 
+    put_beeper
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper 
+    put_beeper
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper 
+    put_beeper
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper   
+    put_beeper 
+ end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 end

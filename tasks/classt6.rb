@@ -6,35 +6,14 @@ require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 require_relative "../mixins/collums"
 # A class whose robots know how to sweep a short staircase of beepers
-class StairSweeper < UrRobot
+class Classt6 < UrRobot
   include Turner
   include Collums
   def initialize (street, avenue, direction, beepers)
-    super(street, avenue, direction, beepers)
+    super(street, avenue, NORTH, beepers)
   end
   
-  def mover_beeper
-    put_beeper
-    move
-  end
-  def mover_beeperback
-    put_beeper
-    move
-  end
-  def move_five
-    move
-    move
-    move
-    move
-    move
-  end
-  def relay
-   pick_beeper
-   hops
-   hops
-   move
-   put_beeper
-  end
+  
   
 
 end

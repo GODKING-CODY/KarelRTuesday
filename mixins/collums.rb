@@ -25,30 +25,69 @@ module Collums
     put_beeper
   end
   def half_tri
-    karel.move_beepmove
-    karel.turn_right
-    karel.move
-    karel.put_beeper
-    karel.turn_around
-    karel.hops
-    karel.put_beeper
-    karel.move
-    karel.turn_right
-    karel.move_beep
-    karel.turn_right
-    karel.hops
-    karel.put_beeper
-    karel.hops
-    karel.put_beeper
-    karel.move
-    karel.turn_left
-    karel.move_beep
-    karel.turn_left
-    karel.hops
-    karel.put_beeper
-    karel.hops
-    karel.put_beeper
-    karel.hops
-    karel.put_beeper
+    move_be
+    turn
+    move
+    put_beeper
+    turn_around
+    hops
+    put_beeper
+    move
+    turn_right
+    move_beep
+    turn_right
+    hops
+    put_beeper
+    hops
+    put_beeper
+    move
+    turn_left
+    move_beep
+    turn_left
+    hops
+    put_beeper
+    hops
+    put_beeper
+    hops
+    put_beeper
   end
+  def move_turnR 
+    move
+    turn_right
+end
+def move_turnL
+    move
+    turn_left
+end
+def move_9
+    move
+    move
+    move
+    move
+    move
+    move
+    move
+    move
+    move
+  end
+  def hoop
+    turn_left
+    move_9
+    turn_right
+    hops
+    hops
+    turn_right
+    move
+end
+def return
+    turn_left
+    hops
+    hops
+    turn_left
+    move_9
+    turn_right
+end
+
+
+  
 end
