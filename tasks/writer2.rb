@@ -3,7 +3,7 @@
 #License: Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License
 
 $graphical = true
-require_relative "ecritH"
+require_relative "ecritH2"
 require_relative "../karel/robota"
 
 # a task for a stair sweeper

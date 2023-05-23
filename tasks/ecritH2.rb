@@ -23,17 +23,8 @@ class EcritH < UrRobot
     super(street, avenue, direction, INFINITY)
   end
   def ecrit
-    put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    turn_left
-    turn_left
+  move_5
+    turn_around
     move
     move
     turn_left
@@ -48,8 +39,7 @@ class EcritH < UrRobot
     put_beeper
     move
     put_beeper
-    turn_left
-    turn_left
+    turn_around
     move
     move
     move
@@ -61,28 +51,19 @@ class EcritH < UrRobot
 
 end
 class EcritE < UrRobot
+    include Turner
+  include Collums
   def initialize (street, avenue, direction, beepers)
     super(street, avenue, direction, INFINITY)
   end
   def ecrit
-    put_beeper
+    move_5
+    turn_right
     move
     put_beeper
     move
     put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    turn_left
-    turn_left
-    turn_left
-    move
-    put_beeper
-    move
-    put_beeper
-    turn_left
-    turn_left
+    turn_around
     move
     move
     turn_left
@@ -93,8 +74,7 @@ class EcritE < UrRobot
      put_beeper
     move
     put_beeper
-     turn_left
-    turn_left
+     turn_around
     move
     move
     turn_left
@@ -112,21 +92,14 @@ class EcritE < UrRobot
 end
 
 class EcritL < UrRobot
+    include Turner
+  include Collums
   def initialize (street, avenue, direction, beepers)
     super(street, avenue, direction, INFINITY)
   end
   def ecrit
-    put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    turn_left
-    turn_left
+    move_5
+    turn_around
     move
     move
     move
@@ -144,11 +117,19 @@ class EcritL < UrRobot
   end
 end
 class EcritO < UrRobot
+    include Turner
+  include Collums
   def initialize (street, avenue, direction, beepers)
     super(street, avenue, direction, INFINITY)
   end
   def ecrit
+    move_5
+    turn_right
+    move
     put_beeper
+    move
+    put_beeper
+    turn_right
     move
     put_beeper
     move
@@ -157,27 +138,7 @@ class EcritO < UrRobot
     put_beeper
     move
     put_beeper
-    turn_left
-    turn_left
-    turn_left
-    move
-    put_beeper
-    move
-    put_beeper
-    turn_left
-    turn_left
-    turn_left
-    move
-    put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    move
-    put_beeper
-    turn_left
-    turn_left
-    turn_left
+    turn_right
     move
     put_beeper
     move
