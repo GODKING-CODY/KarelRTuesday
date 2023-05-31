@@ -88,8 +88,8 @@ def return
     turn_right
 end
 def move_5
-  put_beeper
-    move
+    put_beeper
+    move 
     put_beeper
     move
     put_beeper
