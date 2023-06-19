@@ -14,6 +14,7 @@ def task()
   karelL = EcritL.new(2, 10, Robota::NORTH, 0)
   karelL2 = EcritL.new(2, 15, Robota::NORTH, 0)
   karelO = EcritO.new(2, 19, Robota::NORTH, 0)
+  
   karelH.ecrit
   karelE.ecrit
   karelL.ecrit
